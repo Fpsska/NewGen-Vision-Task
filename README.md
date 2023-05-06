@@ -1,5 +1,5 @@
 # NewGen-Vision-Task
-## `Legacy` 
+## `Legacy` 🥰 
 ![image](https://github.com/Fpsska/NewGen-Vision-Task/blob/main/images/legacy.png)
-## `My solution`
+## `My solution` 🤠
 ![image](https://github.com/Fpsska/NewGen-Vision-Task/blob/main/images/solution.png)
