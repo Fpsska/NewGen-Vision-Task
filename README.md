@@ -2,7 +2,7 @@
 
 ## `Source code`
 
-![image](https://github.com/Fpsska/NewGen-Vision-Task/blob/main/images/legacy.png)
+![image](https://github.com/Fpsska/NewGen-Vision-Task/blob/main/images/sourse.png)
 
 ## `My solution`
 
