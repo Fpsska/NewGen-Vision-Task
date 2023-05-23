@@ -1,27 +1,31 @@
 class UserService {
+  _username = "";
+  _password = "";
+
   constructor(username, password) {
     this.username = username;
     this.password = password;
   }
 
-  get newUsername() {
-    return this.username;
+  set username(value) {
+    this._username = value;
   }
 
-  set newUsername(value) {
-    this.username = this.username + value;
+  get username() {
+    return this._username;
   }
 
-  get newPassword() {
+  set password(value) {
+    this._password = value;
+  }
+
+  get password() {
     return "You are not allowed to get password";
   }
 
-  set newPassword(value) {
-    this.password = value;
-  }
-
-  static authenticate_user(params) {
-    const { username, password } = params;
+  static authenticateUser(userData) {
+    const { username, password } = userData;
+    console.log(userData);
 
     return new Promise((resolve, reject) => {
       const xhr = new XMLHttpRequest();
@@ -60,25 +64,13 @@ const formEl = document.getElementById("form");
 const nameInput = document.getElementById("username");
 const passwordInput = document.getElementById("password");
 
-// const buttonOnClick = () => {
-//   const usernameValue = nameInput.value;
-//   const passwordValue = passwordInput.value;
-
-//   const res = new UserService(usernameValue, passwordValue);
-
-//   UserService.authenticate_user(res)
-//     .then((fetchedData) => console.log(fetchedData))
-//     .catch((err) => console.log(err));
-// };
-
 const buttonOnClick = async () => {
   const usernameValue = nameInput.value;
   const passwordValue = passwordInput.value;
 
-  const res = new UserService(usernameValue, passwordValue);
-
   try {
-    const fetchedData = await UserService.authenticate_user(res);
+    const res = new UserService(usernameValue, passwordValue);
+    const fetchedData = await UserService.authenticateUser(res);
     console.log(fetchedData);
   } catch (err) {
     console.log(err);

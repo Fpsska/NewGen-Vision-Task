@@ -1,5 +1,9 @@
 # NewGen-Vision-Task
-## `Legacy + jQuery` 🥰 
+
+## `Source code`
+
 ![image](https://github.com/Fpsska/NewGen-Vision-Task/blob/main/images/legacy.png)
-## `My solution` 🤠
+
+## `My solution`
+
 ![image](https://github.com/Fpsska/NewGen-Vision-Task/blob/main/images/solution.png)
